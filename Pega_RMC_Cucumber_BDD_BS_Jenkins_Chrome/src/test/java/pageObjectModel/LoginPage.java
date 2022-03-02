@@ -45,21 +45,21 @@ public class LoginPage {
 	public void username(String stext) {
 		WebDriverWait wait = new WebDriverWait(ldriver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='input-17']")));
-		usernameTxtbox.clear();
-		usernameTxtbox.sendKeys(stext);
+		ipUser.clear();
+		ipUser.sendKeys(stext);
 	}
 
 	public void password(String stext) {
 		WebDriverWait wait = new WebDriverWait(ldriver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='password']")));
-		passwordTxtbox.clear();
-		passwordTxtbox.sendKeys(stext);
+		ipPwd.clear();
+		ipPwd.sendKeys(stext);
 	}
 
 	public void clickLogin() {
 		WebDriverWait wait = new WebDriverWait(ldriver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[.='Login']")));
-		loginBtn.click();
+		btnLogin.click();
 	}
 
 	public String getPageTitle() {
