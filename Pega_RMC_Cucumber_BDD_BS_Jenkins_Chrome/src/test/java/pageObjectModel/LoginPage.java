@@ -18,7 +18,18 @@ public class LoginPage {
 		ldriver.manage().window().maximize();
 		PageFactory.initElements(rdriver, this);
 	}
-	
+	@FindBy(xpath = "//input[@id='input-17']")
+	@CacheLookup
+	WebElement ipUser;
+
+	@FindBy(xpath = "//input[@id='password']")
+	@CacheLookup
+	WebElement ipPwd;
+
+	@FindBy(xpath = "//span[.='Login']") 
+	@CacheLookup
+	WebElement btnLogin;
+
 	@FindBy(xpath = "//input[@id='txtUserID']")
 	@CacheLookup
 	WebElement usernameTxtbox;
@@ -33,21 +44,21 @@ public class LoginPage {
 
 	public void username(String stext) {
 		WebDriverWait wait = new WebDriverWait(ldriver, 30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='txtUserID']")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='input-17']")));
 		usernameTxtbox.clear();
 		usernameTxtbox.sendKeys(stext);
 	}
 
 	public void password(String stext) {
 		WebDriverWait wait = new WebDriverWait(ldriver, 30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='txtPassword']")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='password']")));
 		passwordTxtbox.clear();
 		passwordTxtbox.sendKeys(stext);
 	}
 
 	public void clickLogin() {
 		WebDriverWait wait = new WebDriverWait(ldriver, 30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='sub']")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[.='Login']")));
 		loginBtn.click();
 	}
 
