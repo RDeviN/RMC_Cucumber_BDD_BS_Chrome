@@ -5,7 +5,7 @@ Scenario: User is able to view Leads page
     When User opens the URL "https://test.primericaonline.com/home/index_was35.html"
     And User enters the user name "bfs31"
     And User enters the password "Mar032022"
-    And User clicks on Log in
+    And User clicks on Login button
     Then User can see the Leads page by clicking on Leads menu
     When User clicks on Create lead button
     And User selects Individual lead type

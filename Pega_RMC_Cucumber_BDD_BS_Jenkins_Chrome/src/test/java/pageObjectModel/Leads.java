@@ -18,6 +18,18 @@ public class Leads {
 		PageFactory.initElements(rdriver, this);
 	}
 
+	@FindBy(xpath = "//input[@id='input-17']")
+	@CacheLookup
+	WebElement ipUser;
+
+	@FindBy(xpath = "//input[@id='password']")
+	@CacheLookup
+	WebElement ipPwd;
+
+	@FindBy(xpath = "//span[.='Login']") 
+	@CacheLookup
+	WebElement btnLogin;
+
 	@FindBy(xpath = "//span[@class='menu-item-icon-imageclass pi pi-home-solid']")
 	@CacheLookup
 	WebElement menuHover;
