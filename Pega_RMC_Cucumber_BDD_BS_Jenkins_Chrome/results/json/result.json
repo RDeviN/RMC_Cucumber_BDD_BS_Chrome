@@ -1,0 +1,222 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-22T16:27:03.774Z",
+        "line": 3,
+        "name": "User is able to view Leads page",
+        "description": "",
+        "id": "validate-leads-page;user-is-able-to-view-leads-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2765411400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launches Chrome browser",
+            "match": {
+              "location": "stepDefinitions.Steps.user_launches_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2437582600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opens the URL \"https://pega-86-demo.iqzsystems.io/prweb/app/iqzsa_/aDksxW2FqLyskV_TGzmXXSRT2XjlmHkP*/!STANDARD?pyActivity\u003d%40baseclass.pzProcessURLInWindow\u0026pyPreActivity\u003dEmbed-PortalLayout.RedirectAndRun\u0026ThreadName\u003dOpenPortal_SAPortal\u0026Location\u003dpyActivity%3DData-Portal.ShowSelectedPortal%26portal%3DSAPortal%26Name%3D%20SAPortal%26pzSkinName%3D%26developer%3Dfalse%26ThreadName%3DOpenPortal_SAPortal%26launchPortal%3Dtrue\u0026bPurgeTargetThread\u003dtrue\u0026target\u003dpopup\u0026portalThreadName\u003dSTANDARD\u0026portalName\u003dDeveloper\u0026pzHarnessID\u003dHID5ADC9D482B3E6FF1C1A0D5D364DBED0A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://pega-86-demo.iqzsystems.io/prweb/app/iqzsa_/aDksxW2FqLyskV_TGzmXXSRT2XjlmHkP*/!STANDARD?pyActivity\u003d%40baseclass.pzProcessURLInWindow\u0026pyPreActivity\u003dEmbed-PortalLayout.RedirectAndRun\u0026ThreadName\u003dOpenPortal_SAPortal\u0026Location\u003dpyActivity%3DData-Portal.ShowSelectedPortal%26portal%3DSAPortal%26Name%3D%20SAPortal%26pzSkinName%3D%26developer%3Dfalse%26ThreadName%3DOpenPortal_SAPortal%26launchPortal%3Dtrue\u0026bPurgeTargetThread\u003dtrue\u0026target\u003dpopup\u0026portalThreadName\u003dSTANDARD\u0026portalName\u003dDeveloper\u0026pzHarnessID\u003dHID5ADC9D482B3E6FF1C1A0D5D364DBED0A\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_opens_the_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 198976400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters the user name \"tcapron\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tcapron\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_enters_the_user_name(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 142677600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters the password \"Password@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password@123\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_enters_the_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11592584400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on Log in",
+            "match": {
+              "location": "stepDefinitions.Steps.user_clicks_on_log_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1049243100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User can see the Leads page by clicking on Leads menu",
+            "match": {
+              "location": "stepDefinitions.Steps.user_clicks_on_Leads_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1908292900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on Create lead button",
+            "match": {
+              "location": "stepDefinitions.Steps.user_clicks_on_Create_lead_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1065333400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects Individual lead type",
+            "match": {
+              "location": "stepDefinitions.Steps.user_selects_Individual_lead_type()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6532787400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters and submits the lead details",
+            "match": {
+              "location": "stepDefinitions.Steps.user_enters_submits_lead_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4097857200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is able to see the newly entered lead",
+            "match": {
+              "location": "stepDefinitions.Steps.user_is_able_to_see_newly_added_lead()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8197715800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects the lead and clicks on Edit lead",
+            "match": {
+              "location": "stepDefinitions.Steps.user_clicks_on_edit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13796734600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User edits and submits the lead details",
+            "match": {
+              "location": "stepDefinitions.Steps.user_edits_the_lead_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3523605400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is able to see the edits made to the lead",
+            "match": {
+              "location": "stepDefinitions.Steps.user_is_able_to_see_edits_made_to_lead()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7964296200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks on Convert lead option",
+            "match": {
+              "location": "stepDefinitions.Steps.user_clicks_on_convert_lead_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9197581400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User is able to convert a lead",
+            "match": {
+              "location": "stepDefinitions.Steps.user_is_able_to_convert_a_lead()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate Leads page",
+    "description": "",
+    "id": "validate-leads-page",
+    "keyword": "Feature",
+    "uri": "file:Features/Leads.feature",
+    "tags": []
+  }
+]

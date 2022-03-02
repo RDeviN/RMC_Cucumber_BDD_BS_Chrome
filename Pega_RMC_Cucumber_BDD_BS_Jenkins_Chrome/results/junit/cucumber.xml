@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="74.748">
+    <testcase classname="Validate Leads page" name="User is able to view Leads page" time="74.57">
+        <system-out><![CDATA[Given User launches Chrome browser..........................................passed
+When User opens the URL "https://pega-86-demo.iqzsystems.io/prweb/app/iqzsa_/aDksxW2FqLyskV_TGzmXXSRT2XjlmHkP*/!STANDARD?pyActivity=%40baseclass.pzProcessURLInWindow&pyPreActivity=Embed-PortalLayout.RedirectAndRun&ThreadName=OpenPortal_SAPortal&Location=pyActivity%3DData-Portal.ShowSelectedPortal%26portal%3DSAPortal%26Name%3D%20SAPortal%26pzSkinName%3D%26developer%3Dfalse%26ThreadName%3DOpenPortal_SAPortal%26launchPortal%3Dtrue&bPurgeTargetThread=true&target=popup&portalThreadName=STANDARD&portalName=Developer&pzHarnessID=HID5ADC9D482B3E6FF1C1A0D5D364DBED0A".passed
+And User enters the user name "tcapron".....................................passed
+And User enters the password "Password@123".................................passed
+And User clicks on Log in...................................................passed
+Then User can see the Leads page by clicking on Leads menu..................passed
+When User clicks on Create lead button......................................passed
+And User selects Individual lead type.......................................passed
+And User enters and submits the lead details................................passed
+Then User is able to see the newly entered lead.............................passed
+When User selects the lead and clicks on Edit lead..........................passed
+And User edits and submits the lead details.................................passed
+Then User is able to see the edits made to the lead.........................passed
+When User clicks on Convert lead option.....................................passed
+Then User is able to convert a lead.........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
