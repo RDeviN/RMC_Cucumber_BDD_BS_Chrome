@@ -170,7 +170,7 @@ public class Steps {
 	public void user_clicks_prospects() throws InterruptedException {
 		L.clickProspects();
 		String parentWindow = driver.getWindowHandle();
-		Set <String> handles =  driver.getWindowHandles();
+		String handles =  driver.getWindowHandles();
 		for(String windowHandle  : handles)
 		{
 		if(!windowHandle.equals(parentWindow))
