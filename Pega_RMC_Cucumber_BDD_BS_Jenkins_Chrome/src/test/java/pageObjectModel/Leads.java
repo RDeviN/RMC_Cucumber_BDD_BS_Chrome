@@ -241,25 +241,21 @@ public class Leads {
 		return ldriver.getTitle();
 	}
 
-	public void clickCreateLeads() {
-		WebDriverWait wait = new WebDriverWait(ldriver, 50);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@data-test-id='20141211043154016568414']")));
-		btnCreate.click();
-	}
-
-	public void selectIndividual() {
+	public void addContact() {
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='menu-item-title'][.='Individual']")));
-		    WebElement submenuIndividual = ldriver.findElement(By.xpath("//span[@class='menu-item-title'][.='Individual']"));		    
-		    submenuIndividual.click();	
+			ldriver.switchTo().frame(ldriver.findElement(By.id("PegaGadget3Ifr")));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='fd28b87d']")));
+		    WebElement ipFirstName = ldriver.findElement(By.xpath("//input[@id='fd28b87d']"));		    
+		    ipFirstName.sendKeys("Demo_User_10");	
 		}
 		catch(org.openqa.selenium.StaleElementReferenceException ex)
 		{
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='menu-item-title'][.='Individual']")));
-		    WebElement submenuIndividual = ldriver.findElement(By.xpath("//span[@class='menu-item-title'][.='Individual']"));		    
-		    submenuIndividual.click();
+			ldriver.switchTo().frame(ldriver.findElement(By.id("PegaGadget3Ifr")));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='fd28b87d']")));
+		    WebElement ipFirstName = ldriver.findElement(By.xpath("//input[@id='fd28b87d']"));		    
+		    ipFirstName.sendKeys("Demo_User_10");
 		}
 	}
 

@@ -175,6 +175,11 @@ public class Steps {
 	@When("User clicks on contact quick add")
 	public void user_clicks_quick_add() throws InterruptedException {
 		L.clickQuickAdd();
+	}
+
+	@When("User adds contact details")
+	public void user_adds_contact() throws InterruptedException {
+		L.addContact();
 		L.ldriver.quit();
 	}
 
