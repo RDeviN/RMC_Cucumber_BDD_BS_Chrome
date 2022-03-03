@@ -194,7 +194,7 @@ public class Leads {
 		if(!windowHandle.equals(parentWindow))
           {
 			ldriver.switchTo().window(windowHandle);
-			System.out.println(L.getPageTitle());
+			System.out.println(getPageTitle());
           }
 		}
 		try {			
