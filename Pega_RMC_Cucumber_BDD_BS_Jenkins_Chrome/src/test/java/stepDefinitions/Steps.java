@@ -161,6 +161,11 @@ public class Steps {
 		L.clickNext();
 	}
 	
+	@When("User clicks on crm hyperlink")
+	public void user_clicks_crm_hyperlink() throws InterruptedException {
+		L.clickCRM();
+	}
+
 	@When("User selects Individual lead type")
 	public void user_selects_Individual_lead_type() throws InterruptedException {
 		L.selectIndividual();

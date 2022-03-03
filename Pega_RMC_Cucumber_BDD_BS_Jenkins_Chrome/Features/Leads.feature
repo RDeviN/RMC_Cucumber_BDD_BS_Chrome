@@ -9,3 +9,4 @@ Scenario: User is able to view Leads page
     And User clicks Continue in Protect Your Account page
     And User enters verification code in Two Factor Preference page
     And User clicks Next in Two Factor Preference page
+    And User clicks on crm hyperlink
