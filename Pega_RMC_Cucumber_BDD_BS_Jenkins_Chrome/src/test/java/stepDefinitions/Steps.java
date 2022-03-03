@@ -179,6 +179,7 @@ public class Steps {
 
 	@When("User adds contact details")
 	public void user_adds_contact() throws InterruptedException {
+		Thread.sleep(5000);
 		L.addContact();
 		L.ldriver.quit();
 	}

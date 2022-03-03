@@ -242,7 +242,6 @@ public class Leads {
 	}
 
 	public void addContact() {
-		Thread.sleep(5000);
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			ldriver.switchTo().frame(ldriver.findElement(By.id("PegaGadget3Ifr")));
