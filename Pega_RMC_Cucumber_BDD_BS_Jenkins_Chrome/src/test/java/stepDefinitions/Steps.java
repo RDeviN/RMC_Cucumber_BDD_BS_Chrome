@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import javax.security.auth.login.AccountException;
+import java.util.Set;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -170,7 +171,7 @@ public class Steps {
 	public void user_clicks_prospects() throws InterruptedException {
 		L.clickProspects();
 		String parentWindow = driver.getWindowHandle();
-		String handles =  driver.getWindowHandles();
+		Set<String> handles =  driver.getWindowHandles();
 		for(String windowHandle  : handles)
 		{
 		if(!windowHandle.equals(parentWindow))
