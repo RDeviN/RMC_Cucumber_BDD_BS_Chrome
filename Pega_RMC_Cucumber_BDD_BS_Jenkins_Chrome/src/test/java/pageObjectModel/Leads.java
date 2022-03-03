@@ -254,10 +254,9 @@ public class Leads {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='fb48e245']")));
 		    WebElement ddState = ldriver.findElement(By.xpath("//select[@id='fb48e245']"));		    
 		    ddState.click();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
 		    WebElement selectState = ldriver.findElement(By.xpath("//*[@id='fb48e245']/option[2]"));		    
 		    selectState.click();
-			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='9b49a6c7']")));
 		    WebElement ddPreferredLanguage = ldriver.findElement(By.xpath("//select[@id='9b49a6c7']"));		    
 		    ddPreferredLanguage.click();
@@ -278,10 +277,9 @@ public class Leads {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='fb48e245']")));
 		    WebElement ddState = ldriver.findElement(By.xpath("//select[@id='fb48e245']"));		    
 		    ddState.click();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
 		    WebElement selectState = ldriver.findElement(By.xpath("//*[@id='fb48e245']/option[2]"));		    
 		    selectState.click();
-			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='9b49a6c7']")));
 		    WebElement ddPreferredLanguage = ldriver.findElement(By.xpath("//select[@id='9b49a6c7']"));		    
 		    ddPreferredLanguage.click();
