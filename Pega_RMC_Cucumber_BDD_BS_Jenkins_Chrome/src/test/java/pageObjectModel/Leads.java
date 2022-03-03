@@ -187,13 +187,13 @@ public class Leads {
 	public void clickProspects() throws InterruptedException {
 		Actions action = new Actions(ldriver);
 		Thread.sleep(20000);
-		String parentWindow = driver.getWindowHandle();
-		Set<String> handles =  driver.getWindowHandles();
+		String parentWindow = ldriver.getWindowHandle();
+		Set<String> handles =  ldriver.getWindowHandles();
 		for(String windowHandle  : handles)
 		{
 		if(!windowHandle.equals(parentWindow))
           {
-			driver.switchTo().window(windowHandle);
+			ldriver.switchTo().window(windowHandle);
 			System.out.println(L.getPageTitle());
           }
 		}
