@@ -89,7 +89,7 @@ public class Steps {
 		lp.password(stext);
 	}
     
-	@When("User clicks on Log in")
+	@When("User clicks on Login button")
 	public void user_clicks_on_log_in() {
 		lp.clickLogin();
 	}

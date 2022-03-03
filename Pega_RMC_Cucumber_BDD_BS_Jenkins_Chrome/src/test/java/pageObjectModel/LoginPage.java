@@ -30,18 +30,6 @@ public class LoginPage {
 	@CacheLookup
 	WebElement btnLogin;
 
-	@FindBy(xpath = "//input[@id='txtUserID']")
-	@CacheLookup
-	WebElement usernameTxtbox;
-	
-	@FindBy(xpath = "//input[@id='txtPassword']")
-	@CacheLookup
-	WebElement passwordTxtbox;
-
-	@FindBy(xpath = "//button[@id='sub']")
-	@CacheLookup
-	WebElement loginBtn;
-
 	public void username(String stext) {
 		WebDriverWait wait = new WebDriverWait(ldriver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='input-17']")));
