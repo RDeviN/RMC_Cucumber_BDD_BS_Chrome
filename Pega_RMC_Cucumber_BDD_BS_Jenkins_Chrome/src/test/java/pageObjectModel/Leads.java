@@ -168,30 +168,34 @@ public class Leads {
 		Actions action = new Actions(ldriver);
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			Thread.sleep(30000);
+			Thread.sleep(20000);
 			ldriver.switchTo().frame(ldriver.findElement(By.id("top_nav")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='l'][.='crm']")));
 			WebElement linkCRM = ldriver.findElement(By.xpath("//a[@class='l'][.='crm']"));
 			linkCRM.click();
-			Thread.sleep(30000);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//@id[.='rmcHubTab']")));
-			WebElement clickProspects = ldriver.findElement(By.xpath("//@id[.='rmcHubTab']"));
-			clickProspects.click();
-			//ldriver.switchTo().parentFrame();
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			Thread.sleep(30000);
+			Thread.sleep(20000);
 			ldriver.switchTo().frame(ldriver.findElement(By.id("top_nav")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='l'][.='crm']")));
 			WebElement linkCRM = ldriver.findElement(By.xpath("//a[@class='l'][.='crm']"));
 			linkCRM.click();
-			Thread.sleep(30000);
+		}		
+	}
+
+	public void clickProspects() throws InterruptedException {
+		Actions action = new Actions(ldriver);
+		try {
+			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//@id[.='rmcHubTab']")));
 			WebElement clickProspects = ldriver.findElement(By.xpath("//@id[.='rmcHubTab']"));
 			clickProspects.click();
-			//ldriver.switchTo().parentFrame();
-		}
-		
+		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
+			WebDriverWait wait = new WebDriverWait(ldriver, 50);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//@id[.='rmcHubTab']")));
+			WebElement clickProspects = ldriver.findElement(By.xpath("//@id[.='rmcHubTab']"));
+			clickProspects.click();
+		}		
 	}
 
 	public void clickLeads() throws InterruptedException {
