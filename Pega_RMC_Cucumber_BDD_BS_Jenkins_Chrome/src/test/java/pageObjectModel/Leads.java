@@ -337,13 +337,13 @@ public class Leads {
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("identifierId")));
 		WebElement l = ldriver.findElement(By.id("identifierId"));
 		l.sendKeys("campaignpegatest@gmail.com");
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='RveJvd snByac']")));
-		WebElement b = ldriver.findElement(By.xpath("//span[@class='RveJvd snByac']"));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[.='Next']")));
+		WebElement b = ldriver.findElement(By.xpath("//span[.='Next']"));
 		b.click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='whsOnd zHQkBf']")));
 		WebElement p = ldriver.findElement(By.xpath("//input[@class='whsOnd zHQkBf']"));
 		p.sendKeys("Pegarmc@123");
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='RveJvd snByac']"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='VfPpkd-vQzf8d'][.='Next']"))).click();
 	}
 
 	public void searchLead() {
