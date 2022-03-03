@@ -6,7 +6,7 @@ Scenario: User is able to view Leads page
     And User enters the user name "bfs31"
     And User enters the password "Mar032022"
     And User clicks on Login button
-    Then User can see the Leads page by clicking on Leads menu
+    And User clicks Continue in Protect Your Account page
     When User clicks on Create lead button
     And User selects Individual lead type
     And User enters and submits the lead details

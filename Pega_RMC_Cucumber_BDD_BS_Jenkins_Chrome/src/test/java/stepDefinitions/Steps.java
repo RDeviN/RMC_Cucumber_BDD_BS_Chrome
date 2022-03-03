@@ -145,9 +145,9 @@ public class Steps {
 	}
     
 	// Leads feature
-	@Then("User can see the Leads page by clicking on Leads menu")
-	public void user_clicks_on_Leads_menu() throws InterruptedException {
-		L.clickLeads();
+	@Then("User clicks Continue in Protect Your Account page")
+	public void user_clicks_on_Continue() throws InterruptedException {
+		L.clickContinue();
 		//Assert.assertEquals(lp.getPageTitle(), "User Portal");
 	}
 	
