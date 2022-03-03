@@ -151,9 +151,9 @@ public class Steps {
 		//Assert.assertEquals(lp.getPageTitle(), "User Portal");
 	}
 	
-	@When("User clicks on Create lead button")
-	public void user_clicks_on_Create_lead_button() throws InterruptedException {
-		L.clickCreateLeads();
+	@When("User enters verification code in Two Factor Preference page")
+	public void user_enters_verification_code() throws InterruptedException {
+		L.ipVerificationCode();
 	}
 	
 	@When("User selects Individual lead type")
