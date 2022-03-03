@@ -166,13 +166,8 @@ public class Leads {
 
 	public void clickCRM() throws InterruptedException {
 		Actions action = new Actions(ldriver);
-		String s = ldriver.getWindowHandles();
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			for(String i:s){
-				String t=driver.switchTo().window(i).getTitle();
-				System.out.println(t);
-			}
 			/*
 			ldriver.switchTo().frame(0);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='l'][.='crm']")));
@@ -182,10 +177,6 @@ public class Leads {
 			*/
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			for(String i:s){
-				String t=driver.switchTo().window(i).getTitle();
-				System.out.println(t);
-			}
 			/*
 			ldriver.switchTo().frame(0);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='l'][.='crm']")));
