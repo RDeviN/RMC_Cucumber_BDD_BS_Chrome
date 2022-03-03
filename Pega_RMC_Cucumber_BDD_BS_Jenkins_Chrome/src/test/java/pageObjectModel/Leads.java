@@ -166,7 +166,7 @@ public class Leads {
 
 	public void clickCRM() throws InterruptedException {
 		Actions action = new Actions(ldriver);
-		Set <String> s = ldriver.getWindowHandles();
+		String s = ldriver.getWindowHandles();
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			for(String i:s){
