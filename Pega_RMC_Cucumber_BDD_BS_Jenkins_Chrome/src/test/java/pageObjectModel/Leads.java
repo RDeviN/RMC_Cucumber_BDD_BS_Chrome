@@ -329,19 +329,15 @@ public class Leads {
 		btnSubmit.click();
 	}
 
-	public void removeHover() {
-		Actions action = new Actions(ldriver);
-		try {
-			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@data-test-id='20141211043154016568414']")));
-			WebElement removeHover = ldriver.findElement(By.xpath("//button[@data-test-id='20141211043154016568414']"));
-			action.moveToElement(removeHover).perform();
-		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
-			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@data-test-id='20141211043154016568414']")));
-			WebElement removeHover = ldriver.findElement(By.xpath("//button[@data-test-id='20141211043154016568414']"));
-			action.moveToElement(removeHover).perform();
-		}
+	public void verifyEmail() {
+		driver.get("https://accounts.google.com/signin");
+		WebElement l = ldriver.findElement(By.name("identifier"));
+		l.sendKeys("campaignpegatest@gmail.com");
+		WebElement b = ldriver.findElement(By.className("VfPpkd-LgbsSe"));
+		b.click();
+		WebElement p = ldriver.findElement(By.name("password"));
+		p.sendKeys("Pegarmc@123");
+		b.click();
 	}
 
 	public void searchLead() {

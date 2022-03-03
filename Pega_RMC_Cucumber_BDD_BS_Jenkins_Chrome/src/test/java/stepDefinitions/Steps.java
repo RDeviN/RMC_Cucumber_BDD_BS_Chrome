@@ -181,6 +181,11 @@ public class Steps {
 	public void user_adds_contact() throws InterruptedException {
 		Thread.sleep(5000);
 		L.addContact();
+	}
+
+	@When("User verifies the campaign email received")
+	public void user_verifies_email() throws InterruptedException {
+		L.verifyEmail();
 		L.ldriver.quit();
 	}
 

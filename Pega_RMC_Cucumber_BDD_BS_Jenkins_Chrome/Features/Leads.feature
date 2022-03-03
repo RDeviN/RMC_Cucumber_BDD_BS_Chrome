@@ -13,3 +13,4 @@ Scenario: User is able to view send a prospective campaign
     And User clicks on Prospects
     And User clicks on contact quick add
     And User adds contact details
+    And User verifies the campaign email received
