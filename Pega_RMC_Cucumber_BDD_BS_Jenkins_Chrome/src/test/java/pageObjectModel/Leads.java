@@ -242,9 +242,9 @@ public class Leads {
 	}
 
 	public void addContact() {
+		Thread.sleep(5000);
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			Thread.sleep(5000);
 			ldriver.switchTo().frame(ldriver.findElement(By.id("PegaGadget3Ifr")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='fd28b87d']")));
 		    WebElement ipFirstName = ldriver.findElement(By.xpath("//input[@id='fd28b87d']"));		    
@@ -280,7 +280,6 @@ public class Leads {
 		catch(org.openqa.selenium.StaleElementReferenceException ex)
 		{
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			Thread.sleep(5000);
 			ldriver.switchTo().frame(ldriver.findElement(By.id("PegaGadget3Ifr")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='fd28b87d']")));
 		    WebElement ipFirstName = ldriver.findElement(By.xpath("//input[@id='fd28b87d']"));		    
