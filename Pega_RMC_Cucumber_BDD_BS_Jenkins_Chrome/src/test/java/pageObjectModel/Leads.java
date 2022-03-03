@@ -168,13 +168,13 @@ public class Leads {
 		Actions action = new Actions(ldriver);
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[.='crm']")));
-			WebElement linkCRM = ldriver.findElement(By.xpath("//a[.='crm']"));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='l'][.='crm']")));
+			WebElement linkCRM = ldriver.findElement(By.xpath("//a[@class='l'][.='crm']"));
 			linkCRM.click();
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[.='crm']")));
-			WebElement linkCRM = ldriver.findElement(By.xpath("//a[.='crm']"));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='l'][.='crm']")));
+			WebElement linkCRM = ldriver.findElement(By.xpath("//a[@class='l'][.='crm']"));
 			linkCRM.click();
 		}
 	}
