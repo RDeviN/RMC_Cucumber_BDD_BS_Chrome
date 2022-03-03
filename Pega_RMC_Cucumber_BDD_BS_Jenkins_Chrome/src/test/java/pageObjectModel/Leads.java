@@ -166,6 +166,7 @@ public class Leads {
 
 	public void clickCRM() throws InterruptedException {
 		Actions action = new Actions(ldriver);
+		/*
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='l'][.='crm']")));
@@ -177,6 +178,7 @@ public class Leads {
 			WebElement linkCRM = ldriver.findElement(By.xpath("//a[@class='l'][.='crm']"));
 			linkCRM.click();
 		}
+		*/
 	}
 
 	public void clickLeads() throws InterruptedException {

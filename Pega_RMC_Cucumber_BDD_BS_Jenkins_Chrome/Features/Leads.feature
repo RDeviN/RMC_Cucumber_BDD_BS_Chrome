@@ -1,6 +1,6 @@
-Feature: Validate Leads page
+Feature: Validate Prospective Campaign
   
-Scenario: User is able to view Leads page
+Scenario: User is able to view send a prospective campaign
     Given User launches Chrome browser
     When User opens the URL "https://test.primericaonline.com/home/index_was35.html"
     And User enters the user name "bfs31"
