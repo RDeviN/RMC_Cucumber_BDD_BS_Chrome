@@ -140,11 +140,12 @@ public class Leads {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='input-77']")));
 			WebElement ipVerificationCode = ldriver.findElement(By.xpath("//input[@id='input-77']"));
 			ipVerificationCode.click();
+			ipVerificationCode.sendKeys("000000");
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='input-77']")));
 			WebElement ipVerificationCode = ldriver.findElement(By.xpath("//input[@id='input-77']"));
-			ipVerificationCode.click();
+			ipVerificationCode.sendKeys("000000");
 		}
 	}
 
