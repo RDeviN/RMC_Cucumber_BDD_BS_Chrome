@@ -263,6 +263,18 @@ public class Leads {
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='9b49a6c7']/option[2]")));
 		    WebElement selectPreferredLanguage = ldriver.findElement(By.xpath("//*[@id='9b49a6c7']/option[2]"));		    
 		    selectPreferredLanguage.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='3f8de351']")));
+		    WebElement selectCertificate = ldriver.findElement(By.xpath("//input[@id='3f8de351']"));		    
+		    selectCertificate.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@for='6efbb833Prospective Recruits']")));
+		    WebElement selectProspective = ldriver.findElement(By.xpath("//label[@for='6efbb833Prospective Recruits']"));		    
+		    selectProspective.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='63c2dc9c']")));
+		    WebElement select1on1Campaign = ldriver.findElement(By.xpath("//input[@id='63c2dc9c']"));		    
+		    select1on1Campaign.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@name='ContactDetails_pyWorkPage_32']")));
+		    WebElement btnAdd = ldriver.findElement(By.xpath("//button[@name='ContactDetails_pyWorkPage_32']"));		    
+		    btnAdd.click();
 		}
 		catch(org.openqa.selenium.StaleElementReferenceException ex)
 		{
@@ -286,6 +298,18 @@ public class Leads {
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='9b49a6c7']/option[2]")));
 		    WebElement selectPreferredLanguage = ldriver.findElement(By.xpath("//*[@id='9b49a6c7']/option[2]"));		    
 		    selectPreferredLanguage.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='3f8de351']")));
+		    WebElement selectCertificate = ldriver.findElement(By.xpath("//input[@id='3f8de351']"));		    
+		    selectCertificate.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@for='6efbb833Prospective Recruits']")));
+		    WebElement selectProspective = ldriver.findElement(By.xpath("//label[@for='6efbb833Prospective Recruits']"));		    
+		    selectProspective.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='63c2dc9c']")));
+		    WebElement select1on1Campaign = ldriver.findElement(By.xpath("//input[@id='63c2dc9c']"));		    
+		    select1on1Campaign.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@name='ContactDetails_pyWorkPage_32']")));
+		    WebElement btnAdd = ldriver.findElement(By.xpath("//button[@name='ContactDetails_pyWorkPage_32']"));		    
+		    btnAdd.click();
 		}
 	}
 
