@@ -330,7 +330,7 @@ public class Leads {
 	}
 
 	public void verifyEmail() {
-		driver.get("https://accounts.google.com/signin");
+		ldriver.get("https://accounts.google.com/signin");
 		WebElement l = ldriver.findElement(By.name("identifier"));
 		l.sendKeys("campaignpegatest@gmail.com");
 		WebElement b = ldriver.findElement(By.className("VfPpkd-LgbsSe"));
