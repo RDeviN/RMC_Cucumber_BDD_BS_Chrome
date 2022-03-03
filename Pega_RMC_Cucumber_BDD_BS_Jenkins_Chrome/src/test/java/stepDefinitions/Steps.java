@@ -169,6 +169,18 @@ public class Steps {
 	@When("User clicks on Prospects")
 	public void user_clicks_prospects() throws InterruptedException {
 		L.clickProspects();
+		String parentWindow = driver.getWindowHandle();
+		Set<String> handles =  driver.getWindowHandles();
+		for(String windowHandle  : handles)
+		{
+		if(!windowHandle.equals(parentWindow))
+          {
+			driver.switchTo().window(windowHandle);
+			System.out.println(L.getPageTitle());
+			driver.close(); //closing child window
+			driver.switchTo().window(parentWindow); //cntrl to parent window
+          }
+		}
 		System.out.println(L.getPageTitle());
 		L.ldriver.quit();
 	}
