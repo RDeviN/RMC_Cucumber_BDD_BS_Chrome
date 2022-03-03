@@ -214,6 +214,16 @@ public class Leads {
 
 	public void clickQuickAdd() throws InterruptedException {
 		Actions action = new Actions(ldriver);
+		String parentWindow = ldriver.getWindowHandle();
+		Set<String> handles =  ldriver.getWindowHandles();
+		for(String windowHandle  : handles)
+		{
+		if(!windowHandle.equals(parentWindow))
+          {
+			ldriver.switchTo().window(windowHandle);
+			System.out.println(getPageTitle());
+          }
+		}
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@name='PortalLeftPanel_pyDisplayHarness_7']")));
