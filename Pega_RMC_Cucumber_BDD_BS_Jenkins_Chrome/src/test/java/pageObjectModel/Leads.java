@@ -174,8 +174,8 @@ public class Leads {
 			WebElement linkCRM = ldriver.findElement(By.xpath("//a[@class='l'][.='crm']"));
 			linkCRM.click();
 			Thread.sleep(30000);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id="rmcHubTab"]/a")));
-			WebElement clickProspects = ldriver.findElement(By.xpath("//*[@id="rmcHubTab"]/a"));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=''rmcHubTab']/a")));
+			WebElement clickProspects = ldriver.findElement(By.xpath("//*[@id='rmcHubTab']/a"));
 			Thread.sleep(30000);
 			//ldriver.switchTo().parentFrame();
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
@@ -186,8 +186,8 @@ public class Leads {
 			WebElement linkCRM = ldriver.findElement(By.xpath("//a[@class='l'][.='crm']"));
 			linkCRM.click();
 			Thread.sleep(30000);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id="rmcHubTab"]/a")));
-			WebElement clickProspects = ldriver.findElement(By.xpath("//*[@id="rmcHubTab"]/a"));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='rmcHubTab']/a")));
+			WebElement clickProspects = ldriver.findElement(By.xpath("//*[@id='rmcHubTab']/a"));
 			Thread.sleep(30000);
 			//ldriver.switchTo().parentFrame();
 		}
