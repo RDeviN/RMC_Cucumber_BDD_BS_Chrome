@@ -149,6 +149,21 @@ public class Leads {
 		}
 	}
 
+	public void clickNext() throws InterruptedException {
+		Actions action = new Actions(ldriver);
+		try {
+			WebDriverWait wait = new WebDriverWait(ldriver, 50);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[.='Next']")));
+			WebElement btnNext = ldriver.findElement(By.xpath("//span[.='Next']"));
+			btnNext.click();
+		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
+			WebDriverWait wait = new WebDriverWait(ldriver, 50);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[.='Next']")));
+			WebElement btnNext = ldriver.findElement(By.xpath("//span[.='Next']"));
+			btnNext.click();
+		}
+	}
+
 	public void clickLeads() throws InterruptedException {
 		Actions action = new Actions(ldriver);
 		try {

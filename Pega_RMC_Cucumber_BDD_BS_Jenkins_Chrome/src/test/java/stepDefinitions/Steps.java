@@ -154,6 +154,12 @@ public class Steps {
 	@When("User enters verification code in Two Factor Preference page")
 	public void user_enters_verification_code() throws InterruptedException {
 		L.ipVerificationCode();
+		L.clickNext();
+	}
+
+	@When("User clicks Next in Two Factor Preference page")
+	public void user_clicks_Next_button() throws InterruptedException {
+		L.clickNext();
 	}
 	
 	@When("User selects Individual lead type")
