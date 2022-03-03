@@ -169,23 +169,27 @@ public class Leads {
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			Thread.sleep(30000);
-			//ldriver.switchTo().frame("top_nav");
 			ldriver.switchTo().frame(ldriver.findElement(By.id("top_nav")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='l'][.='crm']")));
 			WebElement linkCRM = ldriver.findElement(By.xpath("//a[@class='l'][.='crm']"));
 			linkCRM.click();
 			Thread.sleep(30000);
-			ldriver.switchTo().parentFrame();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/pfsca/SalesAutomation']")));
+			WebElement clickProspects = ldriver.findElement(By.xpath("//a[@href='/pfsca/SalesAutomation']"));
+			Thread.sleep(30000);
+			//ldriver.switchTo().parentFrame();
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			Thread.sleep(30000);
-			//ldriver.switchTo().frame("top_nav");
 			ldriver.switchTo().frame(ldriver.findElement(By.id("top_nav")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='l'][.='crm']")));
 			WebElement linkCRM = ldriver.findElement(By.xpath("//a[@class='l'][.='crm']"));
 			linkCRM.click();
 			Thread.sleep(30000);
-			ldriver.switchTo().parentFrame();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/pfsca/SalesAutomation']")));
+			WebElement clickProspects = ldriver.findElement(By.xpath("//a[@href='/pfsca/SalesAutomation']"));
+			Thread.sleep(30000);
+			//ldriver.switchTo().parentFrame();
 		}
 		
 	}
