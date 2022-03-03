@@ -164,7 +164,7 @@ public class Steps {
 	@When("User clicks on crm hyperlink")
 	public void user_clicks_crm_hyperlink() throws InterruptedException {
 		L.clickCRM();
-		L.getPageTitle();
+		System.out.println(L.getPageTitle());
 		L.ldriver.quit();
 	}
 	
