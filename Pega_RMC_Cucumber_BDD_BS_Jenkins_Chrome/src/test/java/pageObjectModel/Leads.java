@@ -257,6 +257,7 @@ public class Leads {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
 		    WebElement selectState = ldriver.findElement(By.xpath("//*[@id='fb48e245']/option[2]"));		    
 		    selectState.click();
+			Thread.sleep(3000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='9b49a6c7']")));
 		    WebElement ddPreferredLanguage = ldriver.findElement(By.xpath("//select[@id='9b49a6c7']"));		    
 		    ddPreferredLanguage.click();
@@ -280,6 +281,7 @@ public class Leads {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
 		    WebElement selectState = ldriver.findElement(By.xpath("//*[@id='fb48e245']/option[2]"));		    
 		    selectState.click();
+			Thread.sleep(3000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='9b49a6c7']")));
 		    WebElement ddPreferredLanguage = ldriver.findElement(By.xpath("//select[@id='9b49a6c7']"));		    
 		    ddPreferredLanguage.click();
