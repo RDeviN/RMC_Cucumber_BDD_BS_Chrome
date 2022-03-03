@@ -334,17 +334,16 @@ public class Leads {
 	public void verifyEmail() {
 		WebDriverWait wait = new WebDriverWait(ldriver, 50);
 		ldriver.get("https://accounts.google.com/signin");
-		wait.until(ExpectedConditions.elementToBeClickable(By.name("identifier")));
-		WebElement l = ldriver.findElement(By.name("identifier"));
+		wait.until(ExpectedConditions.elementToBeClickable(By.id("identifierId")));
+		WebElement l = ldriver.findElement(By.id("identifierId"));
 		l.sendKeys("campaignpegatest@gmail.com");
-		wait.until(ExpectedConditions.elementToBeClickable(By.className("VfPpkd-LgbsSe")));
-		WebElement b = ldriver.findElement(By.className("VfPpkd-LgbsSe"));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='RveJvd snByac']")));
+		WebElement b = ldriver.findElement(By.xpath("//span[@class='RveJvd snByac']"));
 		b.click();
-		wait.until(ExpectedConditions.elementToBeClickable(By.name("password")));
-		WebElement p = ldriver.findElement(By.name("password"));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='whsOnd zHQkBf']")));
+		WebElement p = ldriver.findElement(By.xpath("//input[@class='whsOnd zHQkBf']"));
 		p.sendKeys("Pegarmc@123");
-		wait.until(ExpectedConditions.elementToBeClickable(By.className("VfPpkd-LgbsSe")));
-		b.click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='RveJvd snByac']"))).click();
 	}
 
 	public void searchLead() {
