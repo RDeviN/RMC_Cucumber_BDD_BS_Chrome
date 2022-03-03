@@ -247,7 +247,10 @@ public class Leads {
 			ldriver.switchTo().frame(ldriver.findElement(By.id("PegaGadget3Ifr")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='fd28b87d']")));
 		    WebElement ipFirstName = ldriver.findElement(By.xpath("//input[@id='fd28b87d']"));		    
-		    ipFirstName.sendKeys("Demo_User_10");	
+		    ipFirstName.sendKeys("Demo_User_10");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='84ea8b8f']")));
+		    WebElement ipEmail = ldriver.findElement(By.xpath("//input[@id='84ea8b8f']"));		    
+		    ipEmail.sendKeys("campaignpegatest@gmail.com");
 		}
 		catch(org.openqa.selenium.StaleElementReferenceException ex)
 		{
@@ -256,6 +259,9 @@ public class Leads {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='fd28b87d']")));
 		    WebElement ipFirstName = ldriver.findElement(By.xpath("//input[@id='fd28b87d']"));		    
 		    ipFirstName.sendKeys("Demo_User_10");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='84ea8b8f']")));
+		    WebElement ipEmail = ldriver.findElement(By.xpath("//input[@id='84ea8b8f']"));		    
+		    ipEmail.sendKeys("campaignpegatest@gmail.com");
 		}
 	}
 
