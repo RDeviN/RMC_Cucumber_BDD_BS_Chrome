@@ -185,22 +185,27 @@ public class Leads {
 
 	public void clickProspects() throws InterruptedException {
 		Actions action = new Actions(ldriver);
-		try {
-			Thread.sleep(20000);
-			/*
+		Thread.sleep(20000);
+		String parentWindow = driver.getWindowHandle();
+		Set<String> handles =  driver.getWindowHandles();
+		for(String windowHandle  : handles)
+		{
+		if(!windowHandle.equals(parentWindow))
+          {
+			driver.switchTo().window(windowHandle);
+			System.out.println(L.getPageTitle());
+          }
+		}
+		try {			
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//@id[.='rmcHubTab']")));
 			WebElement clickProspects = ldriver.findElement(By.xpath("//@id[.='rmcHubTab']"));
 			clickProspects.click();
-			*/
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
-			Thread.sleep(20000);
-			/*
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//@id[.='rmcHubTab']")));
 			WebElement clickProspects = ldriver.findElement(By.xpath("//@id[.='rmcHubTab']"));
 			clickProspects.click();
-			*/
 		}		
 	}
 
