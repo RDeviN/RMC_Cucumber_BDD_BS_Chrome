@@ -251,6 +251,18 @@ public class Leads {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='84ea8b8f']")));
 		    WebElement ipEmail = ldriver.findElement(By.xpath("//input[@id='84ea8b8f']"));		    
 		    ipEmail.sendKeys("campaignpegatest@gmail.com");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='fb48e245']")));
+		    WebElement ddState = ldriver.findElement(By.xpath("//select[@id='fb48e245']"));		    
+		    ddState.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
+		    WebElement selectState = ldriver.findElement(By.xpath("//*[@id='fb48e245']/option[2]"));		    
+		    ddState.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='9b49a6c7']")));
+		    WebElement ddPreferredLanguage = ldriver.findElement(By.xpath("//select[@id='9b49a6c7']"));		    
+		    ddState.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='9b49a6c7']/option[2]")));
+		    WebElement selectPreferredLanguage = ldriver.findElement(By.xpath("//*[@id='9b49a6c7']/option[2]"));		    
+		    selectPreferredLanguage.click();
 		}
 		catch(org.openqa.selenium.StaleElementReferenceException ex)
 		{
@@ -262,6 +274,18 @@ public class Leads {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='84ea8b8f']")));
 		    WebElement ipEmail = ldriver.findElement(By.xpath("//input[@id='84ea8b8f']"));		    
 		    ipEmail.sendKeys("campaignpegatest@gmail.com");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='fb48e245']")));
+		    WebElement ddState = ldriver.findElement(By.xpath("//select[@id='fb48e245']"));		    
+		    ddState.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
+		    WebElement selectState = ldriver.findElement(By.xpath("//*[@id='fb48e245']/option[2]"));		    
+		    ddState.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='9b49a6c7']")));
+		    WebElement ddPreferredLanguage = ldriver.findElement(By.xpath("//select[@id='9b49a6c7']"));		    
+		    ddState.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='9b49a6c7']/option[2]")));
+		    WebElement selectPreferredLanguage = ldriver.findElement(By.xpath("//*[@id='9b49a6c7']/option[2]"));		    
+		    selectPreferredLanguage.click();
 		}
 	}
 
