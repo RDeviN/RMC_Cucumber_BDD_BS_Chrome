@@ -214,7 +214,7 @@ public class Steps {
 	public void user_is_able_to_convert_a_lead() throws InterruptedException {
 		L.clickConvertlead();
 		L.submitConvertlead();
-		L.ldriver.quit();
+		//L.ldriver.quit();
 	}
 	
 	// Opportunities feature
