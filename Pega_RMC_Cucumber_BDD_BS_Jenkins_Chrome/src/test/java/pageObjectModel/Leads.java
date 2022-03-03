@@ -344,7 +344,6 @@ public class Leads {
 		WebElement p = ldriver.findElement(By.name("password"));
 		p.sendKeys("Pegarmc@123");
 		wait.until(ExpectedConditions.elementToBeClickable(By.className("VfPpkd-LgbsSe")));
-		WebElement b = ldriver.findElement(By.className("VfPpkd-LgbsSe"));
 		b.click();
 	}
 
