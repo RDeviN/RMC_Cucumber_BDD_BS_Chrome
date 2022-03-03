@@ -245,16 +245,16 @@ public class Leads {
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			ldriver.switchTo().frame(ldriver.findElement(By.id("PegaGadget1Ifr")));
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='fd28b87d']")));
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='fd28b87d']")));
 		    WebElement ipFirstName = ldriver.findElement(By.xpath("//input[@id='fd28b87d']"));		    
 		    ipFirstName.sendKeys("Demo_User_10");
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='84ea8b8f']")));
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='84ea8b8f']")));
 		    WebElement ipEmail = ldriver.findElement(By.xpath("//input[@id='84ea8b8f']"));		    
 		    ipEmail.sendKeys("campaignpegatest@gmail.com");
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='fb48e245']")));
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//select[@id='fb48e245']")));
 		    WebElement ddState = ldriver.findElement(By.xpath("//select[@id='fb48e245']"));		    
 		    ddState.click();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='fb48e245']/option[2]")));
 		    WebElement selectState = ldriver.findElement(By.xpath("//*[@id='fb48e245']/option[2]"));		    
 		    selectState.click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//select[@id='9b49a6c7']")));
@@ -280,16 +280,16 @@ public class Leads {
 		{
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			ldriver.switchTo().frame(ldriver.findElement(By.id("PegaGadget1Ifr")));
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='fd28b87d']")));
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='fd28b87d']")));
 		    WebElement ipFirstName = ldriver.findElement(By.xpath("//input[@id='fd28b87d']"));		    
 		    ipFirstName.sendKeys("Demo_User_10");
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='84ea8b8f']")));
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='84ea8b8f']")));
 		    WebElement ipEmail = ldriver.findElement(By.xpath("//input[@id='84ea8b8f']"));		    
 		    ipEmail.sendKeys("campaignpegatest@gmail.com");
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='fb48e245']")));
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//select[@id='fb48e245']")));
 		    WebElement ddState = ldriver.findElement(By.xpath("//select[@id='fb48e245']"));		    
 		    ddState.click();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='fb48e245']/option[2]")));
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='fb48e245']/option[2]")));
 		    WebElement selectState = ldriver.findElement(By.xpath("//*[@id='fb48e245']/option[2]"));		    
 		    selectState.click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//select[@id='9b49a6c7']")));
