@@ -170,9 +170,14 @@ public class Steps {
 	@When("User clicks on Prospects")
 	public void user_clicks_prospects() throws InterruptedException {
 		L.clickProspects();
-		L.ldriver.quit();
 	}
 	
+	@When("User clicks on contact quick add")
+	public void user_clicks_quick_add() throws InterruptedException {
+		L.clickQuickAdd();
+		L.ldriver.quit();
+	}
+
 	// Opportunities feature
 	@Then("User can see the Opportunities page by clicking on Opportunities menu")
 	public void user_clicks_on_Opportunities_menu() throws InterruptedException {

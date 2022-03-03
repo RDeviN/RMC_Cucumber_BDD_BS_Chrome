@@ -202,34 +202,28 @@ public class Leads {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='rmcHubTab']/a")));
 			WebElement clickProspects = ldriver.findElement(By.xpath("//*[@id='rmcHubTab']/a"));
 			clickProspects.click();
-			Thread.sleep(30000);
+			Thread.sleep(20000);
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='rmcHubTab']/a")));
 			WebElement clickProspects = ldriver.findElement(By.xpath("//*[@id='rmcHubTab']/a"));
 			clickProspects.click();
-			Thread.sleep(30000);
+			Thread.sleep(20000);
 		}		
 	}
 
-	public void clickLeads() throws InterruptedException {
+	public void clickQuickAdd() throws InterruptedException {
 		Actions action = new Actions(ldriver);
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='menu-item-icon-imageclass pi pi-home-solid']")));
-			WebElement menuHover = ldriver.findElement(By.xpath("//span[@class='menu-item-icon-imageclass pi pi-home-solid']"));	
-			action.moveToElement(menuHover).perform();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='menu-item-icon-imageclass pi pi-flashlight-ne-solid']")));
-			WebElement menuLeads = ldriver.findElement(By.xpath("//span[@class='menu-item-icon-imageclass pi pi-flashlight-ne-solid']"));
-			menuLeads.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@name='PortalLeftPanel_pyDisplayHarness_7']")));
+			WebElement menuQuickAdd = ldriver.findElement(By.xpath("//a[@name='PortalLeftPanel_pyDisplayHarness_7']"));	
+			menuQuickAdd.click();
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='menu-item-icon-imageclass pi pi-home-solid']")));
-			WebElement menuHover = ldriver.findElement(By.xpath("//span[@class='menu-item-icon-imageclass pi pi-home-solid']"));
-			action.moveToElement(menuHover).perform();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='menu-item-icon-imageclass pi pi-flashlight-ne-solid']")));
-			WebElement menuLeads = ldriver.findElement(By.xpath("//span[@class='menu-item-icon-imageclass pi pi-flashlight-ne-solid']"));
-			menuLeads.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@name='PortalLeftPanel_pyDisplayHarness_7']")));
+			WebElement menuQuickAdd = ldriver.findElement(By.xpath("//a[@name='PortalLeftPanel_pyDisplayHarness_7']"));	
+			menuQuickAdd.click();
 		}
 	}
 
