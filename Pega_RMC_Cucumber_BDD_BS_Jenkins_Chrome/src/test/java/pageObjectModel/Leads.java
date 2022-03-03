@@ -132,22 +132,22 @@ public class Leads {
 			btnContinue.click();
 		}
 	}
-
-	public void ipVerificationCode	() throws InterruptedException {
+	
+	public void ipVerificationCode() throws InterruptedException {
 		Actions action = new Actions(ldriver);
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='input-77']")));
-			WebElement ipVerification_Code = ldriver.findElement(By.xpath("//input[@id='input-77']"));
-			ipVerification_Code.sendKeys('000000');
+			WebElement ipVerificationCode = ldriver.findElement(By.xpath("//input[@id='input-77']"));
+			ipVerificationCode.click();
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='input-77']")));
-			WebElement ipVerification_Code = ldriver.findElement(By.xpath("//input[@id='input-77']"));
-			ipVerification_Code.sendKeys('000000');
+			WebElement ipVerificationCode = ldriver.findElement(By.xpath("//input[@id='input-77']"));
+			ipVerificationCode.click();
 		}
 	}
-	
+
 	public void clickLeads() throws InterruptedException {
 		Actions action = new Actions(ldriver);
 		try {
