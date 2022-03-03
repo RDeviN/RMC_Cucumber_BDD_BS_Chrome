@@ -165,56 +165,7 @@ public class Steps {
 	public void user_clicks_crm_hyperlink() throws InterruptedException {
 		L.clickCRM();
 		driver.get("https://test.primericaonline.com/pfsca/GlobalSearchServlet?init=Y&target=CRM&ts=1646301946154");
-	}
-
-	@When("User selects Individual lead type")
-	public void user_selects_Individual_lead_type() throws InterruptedException {
-		L.selectIndividual();
-	}
-	
-	@When("User enters and submits the lead details")
-	public void user_enters_submits_lead_details() throws InterruptedException {
-		L.keyinLeadIndividual();
-		L.leadCreationSuccessful();
-	}
-
-	@Then("User is able to see the newly entered lead")
-	public void user_is_able_to_see_newly_added_lead() throws InterruptedException {
-		L.clickLeads();
-		L.removeHover();
-		L.searchLead();
-	}
-	
-	@Then("User selects the lead and clicks on Edit lead")
-	public void user_clicks_on_edit() throws InterruptedException {
-		L.selectIndividualLead();
-		L.clickEdit();
-	}
-	
-	@Then("User edits and submits the lead details")
-	public void user_edits_the_lead_details() throws InterruptedException {
-		L.editIndividualLead();
-		L.leadEditSuccessful();
-	}
-	
-	@Then("User is able to see the edits made to the lead")
-	public void user_is_able_to_see_edits_made_to_lead() throws InterruptedException {
-		L.clickLeads();
-		L.removeHover();
-		L.searchLead();
-	}
-	
-	@When("User clicks on Convert lead option")
-	public void user_clicks_on_convert_lead_option() throws InterruptedException {
-		L.selectIndividualLead();
-		L.clickActions();
-	}
-	
-	@Then("User is able to convert a lead")
-	public void user_is_able_to_convert_a_lead() throws InterruptedException {
-		L.clickConvertlead();
-		L.submitConvertlead();
-		//L.ldriver.quit();
+		L.ldriver.quit();
 	}
 	
 	// Opportunities feature
