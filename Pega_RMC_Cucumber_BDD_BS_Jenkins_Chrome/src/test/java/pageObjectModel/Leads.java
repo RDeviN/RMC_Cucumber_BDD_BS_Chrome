@@ -169,14 +169,14 @@ public class Leads {
 		Actions action = new Actions(ldriver);
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			Thread.sleep(20000);
+			Thread.sleep(5000);
 			ldriver.switchTo().frame(ldriver.findElement(By.id("top_nav")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='l'][.='crm']")));
 			WebElement linkCRM = ldriver.findElement(By.xpath("//a[@class='l'][.='crm']"));
 			linkCRM.click();
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
-			Thread.sleep(20000);
+			Thread.sleep(5000);
 			ldriver.switchTo().frame(ldriver.findElement(By.id("top_nav")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='l'][.='crm']")));
 			WebElement linkCRM = ldriver.findElement(By.xpath("//a[@class='l'][.='crm']"));
@@ -186,7 +186,7 @@ public class Leads {
 
 	public void clickProspects() throws InterruptedException {
 		Actions action = new Actions(ldriver);
-		Thread.sleep(20000);
+		Thread.sleep(5000);
 		String parentWindow = ldriver.getWindowHandle();
 		Set<String> handles =  ldriver.getWindowHandles();
 		for(String windowHandle  : handles)
@@ -202,13 +202,13 @@ public class Leads {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='rmcHubTab']/a")));
 			WebElement clickProspects = ldriver.findElement(By.xpath("//*[@id='rmcHubTab']/a"));
 			clickProspects.click();
-			Thread.sleep(20000);
+			Thread.sleep(5000);
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='rmcHubTab']/a")));
 			WebElement clickProspects = ldriver.findElement(By.xpath("//*[@id='rmcHubTab']/a"));
 			clickProspects.click();
-			Thread.sleep(20000);
+			Thread.sleep(5000);
 		}		
 	}
 
@@ -247,7 +247,7 @@ public class Leads {
 			ldriver.switchTo().frame(1);
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='fd28b87d']")));
 		    WebElement ipFirstName = ldriver.findElement(By.xpath("//input[@id='fd28b87d']"));		    
-		    ipFirstName.sendKeys("Demo_User_10");
+		    ipFirstName.sendKeys("Demo_04Mar2022_1");
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='84ea8b8f']")));
 		    WebElement ipEmail = ldriver.findElement(By.xpath("//input[@id='84ea8b8f']"));		    
 		    ipEmail.sendKeys("campaignpegatest@gmail.com");
