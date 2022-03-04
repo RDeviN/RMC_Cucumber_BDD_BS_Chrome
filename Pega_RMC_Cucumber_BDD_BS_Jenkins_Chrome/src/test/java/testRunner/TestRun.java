@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions
 (
-		features = ".//Features/Leads.feature",
+		features = ".//Features/Campaign.feature",
 		glue = "stepDefinitions",
 		dryRun = false,
 		monochrome = true,

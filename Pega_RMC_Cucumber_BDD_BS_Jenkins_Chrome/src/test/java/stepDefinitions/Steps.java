@@ -98,60 +98,70 @@ public class Steps {
 	// Dashboard feature
 	@Then("User can see the Dashboard page")
 	public void user_can_see_the_Dashboard_page() throws InterruptedException {
+	//placeholder
 	}
 
 	// Partner Dashboard feature
 	@Then("User can see the Partner dashboard page by clicking on Partner dashboard menu")
 	public void user_clicks_on_Partner_Dashboard_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// My Work feature
 	@Then("User can see the My work page by clicking on My Work menu")
 	public void user_clicks_on_my_work_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Pulse feature
 	@Then("User can see the Pulse page by clicking on Pulse menu")
 	public void user_clicks_on_pulse_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Tags feature
 	@Then("User can see the Tags page by clicking on Tags menu")
 	public void user_clicks_on_Tags_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Bulk emails feature
 	@Then("User can see the Bulk Emails page by clicking on Bulk Emails menu")
 	public void user_clicks_on_Bulk_emails_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Organizations feature
 	@Then("User can see the Organizations page by clicking on Organizations menu")
 	public void user_clicks_on_Organizations_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Households feature
 	@Then("User can see the Households page by clicking on Households menu")
 	public void user_clicks_on_Households_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Accounts feature
 	@Then("User can see the Accounts page by clicking on Accounts menu")
 	public void user_clicks_on_Accounts_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Contacts feature
 	@Then("User can see the Contacts page by clicking on Contacts menu")
 	public void user_clicks_on_Contacts_menu() throws InterruptedException {
+	//placeholder
 	}
     
-	// Leads feature
+	// Protect Your Account feature
 	@Then("User clicks Continue in Protect Your Account page")
 	public void user_clicks_on_Continue() throws InterruptedException {
 		L.clickContinue();
-		//Assert.assertEquals(lp.getPageTitle(), "User Portal");
 	}
 	
+	// Two Factor Preference feature
 	@When("User enters verification code in Two Factor Preference page")
 	public void user_enters_verification_code() throws InterruptedException {
 		L.ipVerificationCode();
@@ -181,10 +191,11 @@ public class Steps {
 	public void user_adds_contact() throws InterruptedException {
 		Thread.sleep(5000);
 		L.addContact();
+		Thread.sleep(5000);
 	}
 
-	@When("User verifies the campaign email received")
-	public void user_verifies_email() throws InterruptedException {
+	@When("Prospect verifies the campaign email received")
+	public void prospect_verifies_email() throws InterruptedException {
 		L.verifyEmail();
 		L.ldriver.quit();
 	}
@@ -192,41 +203,49 @@ public class Steps {
 	// Opportunities feature
 	@Then("User can see the Opportunities page by clicking on Opportunities menu")
 	public void user_clicks_on_Opportunities_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Forecast feature
 	@Then("User can see the Forecast page by clicking on Forecast menu")
 	public void user_clicks_on_Forecast_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Campaigns feature
 	@Then("User can see the Campaigns page by clicking on Campaigns menu")
 	public void user_clicks_on_Campaigns_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Territories feature
 	@Then("User can see the Territories page by clicking on Territories menu")
 	public void user_clicks_on_Territories_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Partners feature
 	@Then("User can see the Partners page by clicking on Partners menu")
 	public void user_clicks_on_Partners_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Operators feature
 	@Then("User can see the Operators page by clicking on Operators menu")
 	public void user_clicks_on_Operators_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Tools feature
 	@Then("User can see the Tools page by clicking on Tools menu")
 	public void user_clicks_on_Tools_menu() throws InterruptedException {
+	//placeholder
 	}
 
 	// Reports feature
 	@Then("User can see the Reports page by clicking on Reports menu")
 	public void user_clicks_on_Reports_menu() throws InterruptedException {
+	//placeholder
 	}
 	
 }

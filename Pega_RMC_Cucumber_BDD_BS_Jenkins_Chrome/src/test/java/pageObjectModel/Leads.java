@@ -245,7 +245,6 @@ public class Leads {
 		try {
 			WebDriverWait wait = new WebDriverWait(ldriver, 50);
 			ldriver.switchTo().frame(1);
-			//ldriver.switchTo().frame(ldriver.findElement(By.id("PegaGadget1Ifr")));
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='fd28b87d']")));
 		    WebElement ipFirstName = ldriver.findElement(By.xpath("//input[@id='fd28b87d']"));		    
 		    ipFirstName.sendKeys("Demo_User_10");
