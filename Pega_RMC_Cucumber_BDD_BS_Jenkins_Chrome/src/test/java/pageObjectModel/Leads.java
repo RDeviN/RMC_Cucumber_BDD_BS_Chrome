@@ -340,8 +340,8 @@ public class Leads {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[.='Next']")));
 		WebElement b = ldriver.findElement(By.xpath("//span[.='Next']"));
 		b.click();
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='whsOnd zHQkBf']")));
-		WebElement p = ldriver.findElement(By.xpath("//input[@class='whsOnd zHQkBf']"));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='password'][@name='password']")));
+		WebElement p = ldriver.findElement(By.xpath("//input[@type='password'][@name='password']"));
 		p.sendKeys("Pegarmc@123");
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='VfPpkd-vQzf8d'][.='Next']"))).click();
 	}
