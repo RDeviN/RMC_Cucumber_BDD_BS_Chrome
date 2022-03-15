@@ -19,6 +19,7 @@ import io.cucumber.java.en.*;
 import net.masterthought.cucumber.json.Tag;
 import pageObjectModel.Accounts;
 import pageObjectModel.BulkEmails;
+import pageObjectModel.Campaign;
 import pageObjectModel.Campaigns;
 import pageObjectModel.Contacts;
 import pageObjectModel.Dashboard;
@@ -55,7 +56,7 @@ public class Steps {
 	public Leads L;
 	public Opportunities O;
 	public Forecast F;
-	public Campaigns Cmp;
+	public Campaign Cmp;
 	public Territories To;
 	public Partners Pt;
 	public Operators Op;
@@ -72,7 +73,7 @@ public class Steps {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		lp = new LoginPage(driver);
-		L = new Leads(driver);
+		Cmp = new Campaign(driver);
 	}
 	
 	@When("User opens the URL {string}")
@@ -158,46 +159,46 @@ public class Steps {
 	// Protect Your Account feature
 	@Then("User clicks Continue in Protect Your Account page")
 	public void user_clicks_on_Continue() throws InterruptedException {
-		L.clickContinue();
+		Cmp.clickContinue();
 	}
 	
 	// Two Factor Preference feature
 	@When("User enters verification code in Two Factor Preference page")
 	public void user_enters_verification_code() throws InterruptedException {
-		L.ipVerificationCode();
+		Cmp.ipVerificationCode();
 	}
 
 	@When("User clicks Next in Two Factor Preference page")
 	public void user_clicks_Next_button() throws InterruptedException {
-		L.clickNext();
+		Cmp.clickNext();
 	}
 	
 	@When("User clicks on crm hyperlink")
 	public void user_clicks_crm_hyperlink() throws InterruptedException {
-		L.clickCRM();
+		Cmp.clickCRM();
 	}
 
 	@When("User clicks on Prospects")
 	public void user_clicks_prospects() throws InterruptedException {
-		L.clickProspects();
+		Cmp.clickProspects();
 	}
 	
 	@When("User clicks on contact quick add")
 	public void user_clicks_quick_add() throws InterruptedException {
-		L.clickQuickAdd();
+		Cmp.clickQuickAdd();
 	}
 
 	@When("User adds contact details")
 	public void user_adds_contact() throws InterruptedException {
 		Thread.sleep(5000);
-		L.addContact();
+		Cmp.addContact();
 		Thread.sleep(5000);
 	}
 
 	@When("Prospect verifies the campaign email received")
 	public void prospect_verifies_email() throws InterruptedException {
-		L.verifyEmail();
-		L.ldriver.quit();
+		Cmp.verifyEmail();
+		Cmp.ldriver.quit();
 	}
 
 	// Opportunities feature
